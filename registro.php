@@ -32,6 +32,13 @@
     <link rel="stylesheet" href="css/sweetalert.css">
     <!-- Estilos personalizados: archivo personalizado 100% real no feik -->
     <link rel="stylesheet" href="css/style.css">
+    
+    
+    <script>
+    function onSubmit(token) {
+        document.getElementById("formulario_registro").submit();
+    }
+    </script>
 
   </head>
 <body >
@@ -135,7 +142,8 @@
               <div class="row">
                 <div class="col-xs-8 col-xs-offset-2">
                   <div class="spacing-2"></div>
-                  <button type="button" class="btn btn-primary btn-block" name="button" id="registro">Registrate</button>
+                  <button class="g-recaptcha" data-sitekey="6LcPlzAmAAAAAFP4BFaOrERKv9l3TrY-qv_tmljs"
+                                    data-callback='onSubmit' data-action='submit' id="registro">Registrar</button>
                 </div>
               </div>
 
